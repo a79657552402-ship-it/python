@@ -1,38 +1,38 @@
 import math
 import sys
 
-#
-# n = 10_000_000
-#
-# lst = [i for i in range(n)]
-# gen = (i for i in range(n))
-#
-# print(sys.getsizeof(lst), " bayt")
-# print(sys.getsizeof(gen), " bayt")
-#
-# keys = ['A', 'B', 'C']
-# values = [1, 2, 3]
-#
-# dct = {k: v ** 5 for k, v in zip(keys, values)}
-# print(dct)
-#
-# values_set = [1, 2, 4, 5, 7, 8, 1, 4, 3, 7, 0, 2, 5]
-# data_set = {i**3 for i in values_set if i % 2 == 0}
-# print(data_set)
-#
-#
-# def pr():
-#     n = 10000000
-#     pt = (i for i in range(n))
-#     yield pt
-#
-# p = pr()
-# inner = next(p)
-# print(next(inner))
-# print(next(inner))
-# print(next(inner))
-# print(next(inner))
-# print(next(inner))
+
+n = 10_000_000
+
+lst = [i for i in range(n)]
+gen = (i for i in range(n))
+
+print(sys.getsizeof(lst), " bayt")
+print(sys.getsizeof(gen), " bayt")
+
+keys = ['A', 'B', 'C']
+values = [1, 2, 3]
+
+dct = {k: v ** 5 for k, v in zip(keys, values)}
+print(dct)
+
+values_set = [1, 2, 4, 5, 7, 8, 1, 4, 3, 7, 0, 2, 5]
+data_set = {i**3 for i in values_set if i % 2 == 0}
+print(data_set)
+
+
+def pr():
+    n = 10000000
+    pt = (i for i in range(n))
+    yield pt
+
+p = pr()
+inner = next(p)
+print(next(inner))
+print(next(inner))
+print(next(inner))
+print(next(inner))
+print(next(inner))
 
 '''Функция для подсчёта произведения квадратов сложения двух суммы списков, и разделить их на результат сложения третий суммы'''
 
